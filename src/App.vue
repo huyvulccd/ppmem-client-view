@@ -1,14 +1,11 @@
 <template>
+  <nav>
+    <router-link to="/login">Đăng nhập</router-link> |
+    <router-link to="/">Trang chủ</router-link> |
+    <router-link to="/about">Thông tin</router-link>
+  </nav>
+  <router-view/>
 </template>
-
-<script>
-
-export default {
-  name: 'App',
-  components: {
-  }
-}
-</script>
 
 <style>
 #app {
@@ -17,6 +14,18 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
+}
+
+nav {
+  padding: 30px;
+}
+
+nav a {
+  font-weight: bold;
+  color: #2c3e50;
+}
+
+nav a.router-link-exact-active {
+  color: #42b983;
 }
 </style>
