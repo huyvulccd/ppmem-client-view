@@ -1,6 +1,6 @@
 <template>
     <div>
-        <label for="">{{ content }}</label>
+        <label for="">{{ content }}: </label>
         <input :id="content" :type="type" v-bind="$attrs" />
     </div>
 </template>
